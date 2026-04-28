@@ -31,7 +31,7 @@ public class Student {
 
     @ElementCollection
     @CollectionTable(name = "student_recommendations", joinColumns = @JoinColumn(name = "student_id"))
-    @Column(name = "recommendation")
+    @Column(name = "`recommendation`")
     private List<String> recommendations = new ArrayList<>();
 
     public Student() {}
